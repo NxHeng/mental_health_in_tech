@@ -5,7 +5,7 @@ import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
-import sklearn
+
 
 def main():
     st.title("Mental Health in Tech Industry")
