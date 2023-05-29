@@ -1,10 +1,11 @@
-import streamlit as st
-import joblib
-import pandas as pd
-import numpy as np
-import time
 import random
+import time
 
+import joblib
+import numpy as np
+import pandas as pd
+import streamlit as st
+import sklearn
 
 def main():
     st.title("Mental Health in Tech Industry")
