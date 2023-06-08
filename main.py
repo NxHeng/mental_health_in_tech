@@ -5,6 +5,7 @@ import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
+import xgboost
 
 
 def main():
@@ -83,7 +84,7 @@ def main():
                 test = test.loc[:, test.columns != 'Seek_Treatment']
                 test.loc[len(test)] = df.loc[0]
 
-                model = joblib.load('model1.pkl')
+                model = joblib.load('model.pkl')
                 scaler = joblib.load('scaler1.pkl')
 
                 for column in test.columns:
